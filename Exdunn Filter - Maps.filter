@@ -369,7 +369,7 @@ Show #$trinkets, jewels - 84+
 	SetTextColor 255 255 0 255           # TEXTCOLOR:	 Jewel: Rare
 	SetBorderColor 240 30 0 255          # BORDERCOLOR:	 Abyss84
 	SetBackgroundColor 120 120 0 255     # BACKGROUND:	 Jewel: Rare
-	PlayAlertSound 12 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show #$trinkets, jewels - 84+
 	Class "Abyss Jewel"
@@ -388,7 +388,7 @@ Show #$trinkets, jewels
 	SetTextColor 255 255 0 255           # TEXTCOLOR:	 Jewel: Rare
 	SetBorderColor 75 240 75 250         # BORDERCOLOR:	 Abyss
 	SetBackgroundColor 120 120 0 255     # BACKGROUND:	 Jewel: Rare
-	PlayAlertSound 12 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show #$trinkets, jewels %H5
 	Class "Abyss Jewel"
@@ -940,25 +940,25 @@ Show # %H5 %TB-Currency-T4
 	Class Currency
 	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Silver Coin" "Glassblower's Bauble" "Orb of Augmentation"
 	SetFontSize 42
-	SetTextColor 210 178 135 255         # TEXTCOLOR:	 Low currency T1
-	SetBorderColor 213 159 100 200       # BORDERCOLOR:	 T1 LOW currency
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetTextColor 184 119 235 255        
+	SetBorderColor 184 119 235 255          
+	SetBackgroundColor 0 0 0 200 
 
 Show # %H4 %TB-Currency-T5
 	Class Currency
 	BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard"
 	SetFontSize 42
-	SetTextColor 170 158 130             # TEXTCOLOR:	 Default Currency
-	SetBorderColor 190 178 135 110       # BORDERCOLOR:	 T2 LOW currency
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetTextColor 184 119 235 255        
+	SetBorderColor 184 119 235 255           
+	SetBackgroundColor 0 0 0 200 
 
 Show # %RF1 %H3 %TB-Currency-T7
 	Class Currency
 	BaseType "Portal Scroll"
 	SetFontSize 42
-	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
-	SetBorderColor 30 50 80 255          # BORDERCOLOR: T3 Portal scroll
-	SetBackgroundColor 0 0 0 100         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetTextColor 184 119 235 255        
+	SetBorderColor 184 119 235 255                
+	SetBackgroundColor 0 0 0 200 
 
 Hide # %H2 %TB-Currency-T6
 	Class Currency
@@ -972,9 +972,9 @@ Hide # %RF1 %H2 %TB-Currency-T8
 	Class Currency
 	BaseType "Scroll of Wisdom"
 	SetFontSize 36
-	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
-	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetTextColor 160 55 240 220        
+	SetBorderColor 160 55 240 255          
+	SetBackgroundColor 0 0 0 255        
 
 #===============================================================================================================
 # [[0500]] OVERRIDE AREA 2 - Override the default rare rulesets here
@@ -1011,7 +1011,7 @@ Show #$topcrafting, ilvl84 %D5 %TB-T1-Crafting
 	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
 
 Show #$topcrafting, ilvl84 %D5 %TB-T2-Crafting-Jwl
-	Class Rings Amulet Belts
+	Class Rings Amulet
 	BaseType "Ruby" "Sapphire" "Topaz" "Diamond" "Prismatic" "Unset" "Gold" "Citrine" "Turquoise" "Agate" "Coral Ring" "Moonstone" "Leather" "Heavy Belt" "Amber" "Jade" "Lapis" "Rustic Sash"
 	Rarity Rare
 	ItemLevel >= 84
@@ -1148,7 +1148,7 @@ Show
 	SetFontSize 42
 	SetBorderColor 25 235 25 255         # BORDERCOLOR:	 Rares - Size - Tiny, special base
 	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
-	# PlayAlertSound 12 300
+	# PlayAlertSound 2 300
 
 #------------------------------------
 #   [0606] 1H Daggers
@@ -1954,7 +1954,7 @@ Show #$flask, utility, lvl, top %TB-T1-Leveling-Flask
 	SetFontSize 45
 	SetBorderColor 50 200 125            # BORDERCOLOR:	 Utility Flasks
 	SetBackgroundColor 25 100 75         # BACKGROUND:	 Recipes
-	PlayAlertSound 12 300                # DROPSOUND:	 Leveling
+	PlayAlertSound 2 300                # DROPSOUND:	 Leveling
 
 Show #$flask, utility, lvl %TB-T1-Leveling-Flask
 	BaseType "Stibnite Flask" "Quicksilver Flask" "Silver Flask" "Bismuth Flask" "Basalt Flask" "Granite Flask" "Diamond Flask" "Jade Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask"
@@ -1963,7 +1963,7 @@ Show #$flask, utility, lvl %TB-T1-Leveling-Flask
 	SetFontSize 45
 	SetBorderColor 50 200 125            # BORDERCOLOR:	 Utility Flasks
 	SetBackgroundColor 25 100 75         # BACKGROUND:	 Recipes
-	PlayAlertSound 12 300                # DROPSOUND:	 Leveling
+	PlayAlertSound 2 300                # DROPSOUND:	 Leveling
 
 #===============================================================================================================
 # [[1100]] HIDE LAYER 3: Random Endgame Flasks
@@ -2020,7 +2020,7 @@ Show
 	SetBorderColor 74 230 58             # BORDERCOLOR:	 Labyrinth, Quest, Shaper Orbs
 
 #------------------------------------
-#   [1203] Top tier maps (T15-16)
+#   [1203] Top tier maps (T16)
 #------------------------------------
 
 Show # Maps:T16
@@ -2042,18 +2042,18 @@ Show
 	ShapedMap True
 	Class Maps
 	SetFontSize 45
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 200 200 200 255   # BACKGROUND:	 T11-T14 maps
+	SetTextColor 191 0 0                # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 191 0 0              # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 225 225 225 255   # BACKGROUND:	 T11-T14 maps
 	PlayAlertSound 6 300                 # DROPSOUND:	 High tier maps
 
 Show
 	DropLevel >= 78
 	Class Maps
 	SetFontSize 45
-	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
-	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 200 200 200 255   # BACKGROUND:	 T11-T14 maps
+	SetTextColor 191 0 0                # TEXTCOLOR:	 Cosmetic: Black Text
+	SetBorderColor 191 0 0              # BORDERCOLOR:	 Cosmetic: Highlight good drops
+	SetBackgroundColor 225 225 225 255   # BACKGROUND:	 T11-T14 maps
 	PlayAlertSound 6 300                 # DROPSOUND:	 High tier maps
 
 
@@ -2065,13 +2065,17 @@ Show
 	DropLevel >= 73
 	Class Maps
 	SetFontSize 35
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetTextColor 254 213 0                  
+	SetBorderColor 254 213 0  
+	SetBackgroundColor 175 175 175 200         # BACKGROUND:	 T6-10 maps, currency, talismans
 	
 Show
 	ShapedMap True
 	Class Maps
 	SetFontSize 35
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
+	SetTextColor 254 213 0                  
+	SetBorderColor 254 213 0  
+	SetBackgroundColor 175 175 175 200         # BACKGROUND:	 T6-10 maps, currency, talismans
 
 #------------------------------------
 #   [1206] Low tier maps (T1-T5)
@@ -2160,28 +2164,28 @@ Show # %TB-Currency-T1.5
 	Class Currency
 	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Orb of Annulment" "Ancient Orb"
 	SetFontSize 45
-	SetTextColor 29 0 67 255             # TEXTCOLOR:	 Cosmetic: T1.5 Currency
-	SetBorderColor 29 0 67 255           # BORDERCOLOR:	 Cosmetic: T1.5 Currency
-	SetBackgroundColor 249 137 25 255    # BACKGROUND:	 T1.5 Currency
+	SetTextColor 255 255 255 255             # TEXTCOLOR:	 Cosmetic: T1.5 Currency
+	SetBorderColor 255 255 255 255           # BORDERCOLOR:	 Cosmetic: T1.5 Currency
+	SetBackgroundColor 144 0 255 255    # BACKGROUND:	 T1.5 Currency
 	PlayAlertSound 8 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # %TB-Currency-T2
 	Class Currency
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring"
+	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant"  
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
-	SetBackgroundColor 249 150 25 255    # BACKGROUND:	 T2 Currency
+	SetBackgroundColor 165 47 255 255    # BACKGROUND:	 T2 Currency
 	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # %TB-Currency-T3
 	Class Currency
-	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Vaal Orb"
+	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Vaal Orb" "Orb of Scouring" "Stacked Deck"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
-	SetBackgroundColor 213 159 0 255     # BACKGROUND:	 T3 Currency
-	PlayAlertSound 12 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	SetBackgroundColor 151 64 218 220     # BACKGROUND:	 T3 Currency
+	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # %TB-Currency-Harbinger-ShardsT1
 	Class Currency
@@ -2190,7 +2194,7 @@ Show # %TB-Currency-Harbinger-ShardsT1
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 40 220 255 255        # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 80 95 210 255     # BACKGROUND:	 Harbinger Item - Shard
-	PlayAlertSound 12 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 Show # %TB-Currency-Harbinger-ShardsT2 %H4
 	Class Currency
@@ -2208,8 +2212,8 @@ Show #$top %TB-Currency-T1
 	Class Currency
 	BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather"
 	SetFontSize 45
-	SetTextColor 255 0 0 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
-	SetBorderColor 255 0 0 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
+	SetTextColor 145 0 255 255             # TEXTCOLOR:	 T1 items: currency, 6L, fishing rod
+	SetBorderColor 145 0 255 255           # BORDERCOLOR:	 T1 items: currency, 6L, fishing rod
 	SetBackgroundColor 255 255 255 255   # BACKGROUND:	 T1 Global High Value Drop
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
@@ -2307,7 +2311,7 @@ Show # Splinter %HS4
 	SetTextColor 255 235 235 255         # TEXTCOLOR:	 Breach Splinter
 	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
 	SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
-	PlayAlertSound 2 100                 # DROPSOUND:	 Breach Splinters
+	# PlayAlertSound 2 100                 # DROPSOUND:	 Breach Splinters
 
 Show
 	Class Currency
@@ -2691,7 +2695,7 @@ Show #$flask, lvl %D4
 	SetFontSize 42
 	SetBorderColor 100 0 100             # BORDERCOLOR:	 Hybrid Flask Indicator
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	# PlayAlertSound 12 300
+	# PlayAlertSound 2 300
 	
 
 #------------------------------------
@@ -2982,7 +2986,7 @@ Show # 5-Links %D5
 	# SetTextColor 255 255 255 255         # TEXTCOLOR:	 Normal Items: Strong Highlight
 	# SetBorderColor 0 140 240 255         # BORDERCOLOR:	 Leveling: 4-link
 	# SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipes
-	# PlayAlertSound 12 300                # DROPSOUND:	 Leveling
+	# PlayAlertSound 2 300                # DROPSOUND:	 Leveling
 
 # Show
 	# LinkedSockets = 4
@@ -2993,7 +2997,7 @@ Show # 5-Links %D5
 	# SetTextColor 25 95 235 255           # TEXTCOLOR: Magic Items: Strong Highlight
 	# SetBorderColor 0 140 240 255         # BORDERCOLOR:	 Leveling: 4-link
 	# SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipes
-	# PlayAlertSound 12 300                # DROPSOUND:	 Leveling
+	# PlayAlertSound 2 300                # DROPSOUND:	 Leveling
 
 # Show #$rgb, lvl, exception %D5
 	# LinkedSockets = 4
@@ -3003,7 +3007,7 @@ Show # 5-Links %D5
 	# SetFontSize 42
 	# SetBorderColor 0 140 240 255         # BORDERCOLOR:	 Leveling: 4-link
 	# SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipes
-	# PlayAlertSound 12 300                # DROPSOUND:	 Leveling
+	# PlayAlertSound 2 300                # DROPSOUND:	 Leveling
 
 #===============================================================================================================
 # [[2200]] Leveling - RGB Recipes

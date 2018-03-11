@@ -1206,7 +1206,6 @@ Show # $Rare->T1 $Rare->Tiny %TC-Rare-Trinkets %UP %D5
 	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
 
 Show
-	ItemLevel >= 65
 	Class Rings Amulets Belts
 	Rarity Rare
 	SetFontSize 42
@@ -1539,17 +1538,17 @@ Show # $Gem->Qual->15
 #   [1202] Other gems
 #------------------------------------
 
-Show # $Gem->Qual %H5
-	Quality >= 1
-	Class Gems
-	SetFontSize 40
-	SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
+# Show # $Gem->Qual %H5
+	# Quality >= 1
+	# Class Gems
+	# SetFontSize 40
+	# SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
 
-Show # $Gem->T2 %TB-DropOnly-Gem %D5
-	Class Gems
-	BaseType "Detonate Mines" "Added Chaos Damage" "Vaal" "Enhance"
-	SetFontSize 40
-	SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
+# Show # $Gem->T2 %TB-DropOnly-Gem %D5
+	# Class Gems
+	# BaseType "Detonate Mines" "Added Chaos Damage" "Vaal" "Enhance"
+	# SetFontSize 40
+	# SetBorderColor 30 150 180 150        # BORDERCOLOR:	 T2 Gems
 
 Hide # $Gem %H2
 	Class Gems
@@ -1577,6 +1576,14 @@ Show # $lvl $flasks->utility %TB-T1-Leveling-Flask %REMS1
 	SetBorderColor 50 200 125            # BORDERCOLOR:	 Utility Flasks
 	SetBackgroundColor 25 100 75         # BACKGROUND:	 Recipes
 
+Show # $lvl $flasks->utility %TB-T1-Leveling-Flask %REMS1
+	Quality >= 10
+	BaseType "Divine Mana Flask" "Silver Flask" "Jade Flask" "Basalt Flask"
+	SetFontSize 45
+	SetBorderColor 50 200 125            # BORDERCOLOR:	 Utility Flasks
+	SetBackgroundColor 25 100 75         # BACKGROUND:	 Recipes
+	PlayAlertSound 12 300                # DROPSOUND:	
+	
 #===============================================================================================================
 # [[1400]] HIDE LAYER 3: Random Endgame Flasks
 #===============================================================================================================
@@ -1989,7 +1996,7 @@ Show # $Fragments->Vessel
 
 Show # $Currency->High-T2 %TB-Currency-T2
 	Class Currency
-	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Vaal Orb" "Apprentice Cartographer's Sextant" "Stacked Deck" "Orb of Scouring" 
+	BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Stacked Deck" 
 	SetFontSize 45
 	SetTextColor 0 0 254 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 254 255             # BORDERCOLOR:	 Cosmetic: Highlight good drops
@@ -1998,7 +2005,7 @@ Show # $Currency->High-T2 %TB-Currency-T2
 
 Show # $Currency->High-T3 %TB-Currency-T3
 	Class Currency
-	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb"
+	BaseType "Orb of Scouring"  "Vaal Orb" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb"
 	SetFontSize 45
 	SetTextColor 0 191 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 191 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
@@ -2032,19 +2039,19 @@ Show # $Currency->Harbinger->T2 %TB-Currency-Harbinger-ShardsT2 %H4
 
 Show #$Currency->Net->T1
 	Class Currency
-	BaseType "Thaumaturgical Net"
+	BaseType "Thaumaturgical Net" "Necromancy Net"
 	SetFontSize 45
 	SetTextColor 155 210 135 255
 	SetBorderColor 0 255 36 255
 	SetBackgroundColor 0 0 0 255
 
-Show #$Currency->Net->T2
-	Class Currency
-	BaseType "Reinforced Steel Net" "Strong Steel Net" "Necromancy Net"
-	SetFontSize 42
-	SetTextColor 155 210 135 255
-	SetBorderColor 0 120 16 255
-	SetBackgroundColor 0 0 0 255
+# Show #$Currency->Net->T2
+	# Class Currency
+	# BaseType "Reinforced Steel Net" "Strong Steel Net" 
+	# SetFontSize 42
+	# SetTextColor 155 210 135 255
+	# SetBorderColor 0 120 16 255
+	# SetBackgroundColor 0 0 0 255
 
 
 #------------------------------------
@@ -2258,7 +2265,7 @@ Show # $Div->T4 %HS4
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 100 150 255         # BORDERCOLOR:	 Cosmetic: T4 Divination
 	SetBackgroundColor 145 215 230 225   # BACKGROUND:	 T4 Divination
-	PlayAlertSound 2 300                 # DROPSOUND:	 Value Drop: Currency, fragments
+	PlayAlertSound 12 300                 # DROPSOUND:	 Value Drop: Currency, fragments
 
 #===============================================================================================================
 # [[1800]] Currency - PART 4 - remaining items

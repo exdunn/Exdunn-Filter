@@ -947,6 +947,16 @@ Show # $x->WhiteSoc %D5 %TC-Offslot-Gem-Leveling
 #	Rarity < Rare
 #	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 
+Show # %H3 $Recipe->RGB->Small
+	SocketGroup RGB
+	Width <= 2
+	Height <= 2
+	ItemLevel >= 65
+	Rarity < Rare
+	SetFontSize 36
+	SetBorderColor 150 150 150           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
+	SetBackgroundColor 75 75 75 255      # BACKGROUND:	 Recipes
+
 #------------------------------------
 #   [0522] Sacrificial Garb
 #------------------------------------
@@ -993,7 +1003,7 @@ Show # $Currency->Low->T2 %H4 %TB-Currency-T5
 
 Show # $Currency->Scroll->Portal %RF1 %H3 %TB-Currency-T7
 	Class Currency
-	BaseType "Portal Scroll"
+	BaseType "Portal Scroll" "Orb of Augmentation" "Armourer's Scrap"
 	SetFontSize 36
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
 	SetBorderColor 30 50 80 255          # BORDERCOLOR: T3 Portal scroll
@@ -1001,7 +1011,7 @@ Show # $Currency->Scroll->Portal %RF1 %H3 %TB-Currency-T7
 
 Hide # $Currency->Low->T3 %H2 %TB-Currency-T6
 	Class Currency
-	BaseType "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
+	BaseType   "Transmutation Shard" "Alteration Shard"
 	SetFontSize 40
 	SetTextColor 170 158 130 220         # TEXTCOLOR:	 Low currency T3
 	SetBorderColor 60 50 30 255          # BORDERCOLOR:	 T3 LOW currency
@@ -1372,9 +1382,9 @@ Show
 #   [0917] AR: Gloves, Boots, Helmets
 #------------------------------------
 
-Show # $Rare->T3->ArmorSmall $Rare->Small %D2 %TD-Rare-Good-SmallArmor %UP
+Show # CHAOS RECIPE
 	DropLevel >= 20
-	Class "Gloves" "Boots" "Helmets"
+	Class "Body Armour" "Gloves" "Boots" "Helmets" "Bows" 
 	Rarity Rare
 	SetFontSize 34
 	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
@@ -1578,7 +1588,7 @@ Show # $lvl $flasks->utility %TB-T1-Leveling-Flask %REMS1
 
 Show # $lvl $flasks->utility %TB-T1-Leveling-Flask %REMS1
 	Quality >= 10
-	BaseType "Divine Mana Flask" "Silver Flask" "Jade Flask" "Basalt Flask"
+	BaseType "Granite Flask" "Silver Flask" "Jade Flask" "Basalt Flask"
 	SetFontSize 45
 	SetBorderColor 50 200 125            # BORDERCOLOR:	 Utility Flasks
 	SetBackgroundColor 25 100 75         # BACKGROUND:	 Recipes
@@ -2039,19 +2049,19 @@ Show # $Currency->Harbinger->T2 %TB-Currency-Harbinger-ShardsT2 %H4
 
 Show #$Currency->Net->T1
 	Class Currency
-	BaseType "Thaumaturgical Net" "Necromancy Net"
+	BaseType "Necromancy Net"
 	SetFontSize 45
 	SetTextColor 155 210 135 255
 	SetBorderColor 0 255 36 255
 	SetBackgroundColor 0 0 0 255
 
-# Show #$Currency->Net->T2
-	# Class Currency
-	# BaseType "Reinforced Steel Net" "Strong Steel Net" 
-	# SetFontSize 42
-	# SetTextColor 155 210 135 255
-	# SetBorderColor 0 120 16 255
-	# SetBackgroundColor 0 0 0 255
+Hide #$Currency->Net->T2
+	Class Currency
+	BaseType "Reinforced Steel Net" "Strong Steel Net" "Thaumaturgical Net"
+	SetFontSize 42
+	SetTextColor 155 210 135 255
+	SetBorderColor 0 120 16 255
+	SetBackgroundColor 0 0 0 255
 
 
 #------------------------------------

@@ -752,7 +752,7 @@ Show # $x->Abyss->Jewel $Jewels->Magic %H4
 
 Show # $x->Atlas->T1 $EGC->86 %TB-Top-Atlas-Bases
 	ItemLevel >= 86
-	BaseType "Steel Ring" "Opal Ring"
+	BaseType "Steel Ring" "Opal Ring" "Marble Amulet"
 	Rarity <= Rare
 	SetFontSize 45
 	SetTextColor 255 125 0 255           # TEXTCOLOR:	 Atlas bases
@@ -761,7 +761,7 @@ Show # $x->Atlas->T1 $EGC->86 %TB-Top-Atlas-Bases
 	PlayAlertSound 6 300                 # DROPSOUND:	 T1 Drop
 
 Show # $x->Atlas->T1 %TB-Top-Atlas-Bases
-	BaseType "Steel Ring" "Opal Ring"
+	BaseType "Steel Ring" "Opal Ring" "Marble Amulet"
 	Rarity <= Rare
 	SetFontSize 45
 	SetTextColor 255 255 255             # TEXTCOLOR:	 Atlas cosmetic highlight
@@ -771,7 +771,7 @@ Show # $x->Atlas->T1 %TB-Top-Atlas-Bases
 
 Show # $x->Atlas->T2 %TB-Atlas-Bases
 	ItemLevel >= 86
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
+	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
 	Rarity <= Rare
 	SetFontSize 45
 	SetTextColor 255 125 0 255           # TEXTCOLOR:	 Atlas bases
@@ -780,7 +780,7 @@ Show # $x->Atlas->T2 %TB-Atlas-Bases
 
 Show # $x->Atlas->T2 $Rare->Tiny %TB-Atlas-Bases %D5
 	ItemLevel >= 75
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
+	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
 	Rarity = Rare
 	SetFontSize 42
 	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
@@ -788,7 +788,7 @@ Show # $x->Atlas->T2 $Rare->Tiny %TB-Atlas-Bases %D5
 	SetBackgroundColor 35 100 20 255     # BACKGROUND:	 Rares - T1
 
 Show # $x->Atlas->T2 %TB-Atlas-Bases %D4
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
+	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Crystal Belt"
 	Rarity <= Rare
 	SetFontSize 42
 	SetBorderColor 255 125 0 255         # BORDERCOLOR:	 Atlas bases
@@ -1382,14 +1382,14 @@ Show
 #   [0917] AR: Gloves, Boots, Helmets
 #------------------------------------
 
-Show # CHAOS RECIPE
-	DropLevel >= 20
-	Class "Body Armour" "Gloves" "Boots" "Helmets" "Bows" 
-	Rarity Rare
-	SetFontSize 34
-	SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
-	SetBackgroundColor 0 0 0 219         # BACKGROUND:	 Rares - T3
-	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+# Show # CHAOS RECIPE
+	# DropLevel >= 20
+	# Class "Boots" 
+	# Rarity Rare
+	# SetFontSize 34
+	# SetBorderColor 210 210 210           # BORDERCOLOR:	 Rares - Size - Small (+Good basetype), Recipe: small/high qual
+	# SetBackgroundColor 0 0 0 219         # BACKGROUND:	 Rares - T3
+	# SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
 
 #------------------------------------
 #   [0918] AR: Body Armors
@@ -1771,7 +1771,6 @@ Show # $maps->T9
 	Class Maps
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Show # %H4 $maps->outleveled
 	DropLevel >= 76
@@ -1790,7 +1789,6 @@ Show # $maps->T8
 	Class Maps
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Show # %H4 $maps->outleveled
 	DropLevel >= 75
@@ -1809,7 +1807,6 @@ Show # $maps->T7
 	Class Maps
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Show # %H4 $maps->outleveled
 	DropLevel >= 74
@@ -1828,7 +1825,6 @@ Show # $maps->T6
 	Class Maps
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 T6-10 maps, currency, talismans
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Show # %H4 $maps->outleveled
 	DropLevel >= 73
@@ -1847,7 +1843,6 @@ Show # $maps->T5
 	Class Maps
 	SetFontSize 38
 	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
-	PlayAlertSound 4 300                 # DROPSOUND:	 Low tier map drop
 
 Hide # %H3 $maps->outleveled
 	DropLevel >= 72
@@ -1866,7 +1861,6 @@ Show # $maps->T4
 	Class Maps
 	SetFontSize 38
 	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
-	PlayAlertSound 4 150                 # DROPSOUND:	 Low tier map drop
 
 Hide # %H3 $maps->outleveled
 	DropLevel >= 71
@@ -1885,8 +1879,7 @@ Show # $maps->T3
 	Class Maps
 	SetFontSize 38
 	SetBackgroundColor 0 0 0 226         # BACKGROUND:	 Highlight - low maps, low priority items
-	PlayAlertSound 4 150                 # DROPSOUND:	 Low tier map drop
-
+	
 Hide # %H3 $maps->outleveled
 	DropLevel >= 70
 	Class Maps
@@ -2260,7 +2253,7 @@ Show # $Div->T3 %TB-Divination-T3
 
 Hide # $Div->T5 %H3 %TB-Divination-T5
 	Class "Divination"
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Avenger" "The Blazing Fire" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
+	BaseType "The Gambler" "The Opulent" "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Shard of Fate" "Struck by Lightning" "The Avenger" "The Blazing Fire" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 Cosmetic: Black Text
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Cosmetic: Neutral Highlight
 	SetBackgroundColor 175 215 230 180   # BACKGROUND:	 T5 Divination

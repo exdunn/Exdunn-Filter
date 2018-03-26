@@ -987,7 +987,7 @@ Hide # Minimize junk instead of hiding (if "Show") %TC-Junkable
 
 Show # $Currency->Low->T1 %H5 %TB-Currency-T4
 	Class Currency
-	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Silver Coin" "Glassblower's Bauble"
+	BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Silver Coin" "Glassblower's Bauble"
 	SetFontSize 42
 	SetTextColor 210 178 135 255         # TEXTCOLOR:	 Low currency T1
 	SetBorderColor 213 159 100 200       # BORDERCOLOR:	 T1 LOW currency
@@ -1154,23 +1154,23 @@ Show
 #   [0904] Breach Rings
 #------------------------------------
 
-Show # $Rare->Regal $x->Breach->Ring  %H4
-	ItemLevel >= 75
-	Class Rings
-	BaseType "Breach"
-	Rarity <= Rare
-	SetFontSize 36
-	SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
-	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
-	SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
+# Show # $Rare->Regal $x->Breach->Ring  %H4
+	# ItemLevel >= 75
+	# Class Rings
+	# BaseType "Breach"
+	# Rarity <= Rare
+	# SetFontSize 36
+	# SetTextColor 255 190 0               # TEXTCOLOR:	 Rares - Level - 75+
+	# SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
+	# SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
 
-Show # $x->Breach->Ring %H4
-	Class Rings
-	BaseType "Breach"
-	Rarity <= Rare
-	SetFontSize 36
-	SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
-	SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
+# Show # $x->Breach->Ring %H4
+	# Class Rings
+	# BaseType "Breach"
+	# Rarity <= Rare
+	# SetFontSize 36
+	# SetBorderColor 130 25 255 255        # BORDERCOLOR:	 Breach - accent
+	# SetBackgroundColor 65 20 80          # BACKGROUND:	 Breach
 
 #------------------------------------
 #   [0905] Amulets, Jewels, Rings, Belts
@@ -2042,19 +2042,19 @@ Show # $Currency->Harbinger->T2 %TB-Currency-Harbinger-ShardsT2 %H4
 
 Show #$Currency->Net->T1
 	Class Currency
-	BaseType "Necromancy Net"
+	BaseType "Necromancy Net" "Thaumaturgical Net"
 	SetFontSize 45
-	SetTextColor 155 210 135 255
-	SetBorderColor 0 255 36 255
+	SetTextColor 204 0 154
+	SetBorderColor 204 0 154
 	SetBackgroundColor 0 0 0 255
 
 Show #$Currency->Net->T2
 	Class Currency
-	BaseType "Strong Steel Net" "Thaumaturgical Net"
+	BaseType "Strong Steel Net"
 	SetFontSize 42
-	SetTextColor 155 210 135 255
-	SetBorderColor 0 120 16 255
-	SetBackgroundColor 0 0 0 255
+	SetTextColor 204 0 154
+	SetBorderColor 204 0 154
+	SetBackgroundColor 204 0 154 100
 
 
 #------------------------------------

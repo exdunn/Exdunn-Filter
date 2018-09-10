@@ -2227,14 +2227,14 @@ Hide # $Gem %H2
 # [[1600]] UTILITY FLASKS (Levelling Rules)
 #===============================================================================================================
 
-Show
-	BaseType "Quicksilver Flask" "Silver Flask" "Diamond Flask" "Stibnite Flask" "Sulphur Flask" "Basalt Flask" "Granite Flask" "Sapphire Flask"
-	SetFontSize 40 
-	SetBorderColor 120 0 0               # BORDERCOLOR:	
-	SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Neutral T2
-	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
-	MinimapIcon 2 White Circle
-	PlayEffect White
+# Show
+	# BaseType "Quicksilver Flask" "Silver Flask" "Diamond Flask" "Stibnite Flask" "Sulphur Flask" "Basalt Flask" "Granite Flask" "Sapphire Flask"
+	# SetFontSize 40 
+	# SetBorderColor 120 0 0               # BORDERCOLOR:	
+	# SetBackgroundColor 0 0 0 255         # BACKGROUND:	 Neutral T2
+	# PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
+	# MinimapIcon 2 White Circle
+	# PlayEffect White
 
 Show # $lvl $flasks->utility %TB-T1-Leveling-Flask %REMS1
 	Quality >= 1
@@ -3199,7 +3199,7 @@ Show # $Div->T3 %TB-Divination-T3
 
 Show # $Div->T4Currency %HS5 %TB-Divination-T4Currency
 	Class "Divination"
-	BaseType "Coveted Possession" "Emperor's Luck" "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "Three Faces in the Dark" "Three Voices"
+	BaseType "Coveted Possession"  "Loyalty" "The Catalyst" "The Gemcutter" "The Survivalist" "The Union" "Three Faces in the Dark" "Three Voices" "The Eye of the Dragon"
 	SetFontSize 45
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 100 150 255         # BORDERCOLOR:	 Divi T4
@@ -3222,7 +3222,8 @@ Show # $Div->T5Currency %H4 %TB-Divination-T5Currency
 
 Show # $Div->T5 %H3 %TB-Divination-T5
 	Class "Divination"
-	BaseType "The Opulent" "The Endurance" "The Gambler" "The Web" "Her Mask" "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
+	BaseType "Emperor's Luck" 
+	"The Realm" "Destined to Crumble" "The Flora's Gift" "The Opulent" "The Endurance" "The Gambler" "The Web" "Her Mask" "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Death" "Dying Anguish" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power"
 	SetFontSize 36
 	SetTextColor 0 0 0 255               # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0                 # BORDERCOLOR:	 Neutral T1.5
